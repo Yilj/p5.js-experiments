@@ -48,7 +48,7 @@ function pObject() {
   }
 
   this.addFriction = function(amount) {
-    //this.velocity.mult(amount);
-    player.addForce(createVector(player.velocity.x * -amount, (player.velocity.y * -amount )));
+    var pForce = createVector(player.velocity.x * -amount, (player.velocity.y * -amount ));
+    player.addForce(pForce);
   }
 }
