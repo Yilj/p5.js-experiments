@@ -1,7 +1,7 @@
 var socket;
 
 function setup() {
-    createCanvas(600, 600);
+    createCanvas(displayWidth, displayHeight);
     background(51);
 
     socket = io.connect('http://nodejs-experiments-p5js-experiments.44fs.preview.openshiftapps.com/');
