@@ -1,24 +1,24 @@
 {
-  "name": "p5js-experiments",
-  "version": "1.0.0",
-  "description": "Experiments with p5.js and node.js",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Yilj/p5.js-experiments.git"
-  },
-  "author": "Yilj",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Yilj/p5.js-experiments/issues"
-  },
-  "homepage": "https://github.com/Yilj/p5.js-experiments#readme",
-  "dependencies": {
-    "express": "^4.14.1",
-    "socket.io": "^1.7.2"
-  }
+    "name": "p5js-experiments",
+    "version": "1.0.0",
+    "description": "Experiments with p5.js and node.js",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Yilj/p5.js-experiments.git"
+    },
+    "author": "Yilj",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Yilj/p5.js-experiments/issues"
+    },
+    "homepage": "https://github.com/Yilj/p5.js-experiments#readme",
+    "dependencies": {
+        "express": "^4.14.1",
+        "socket.io": "^1.7.2"
+    }
 }
