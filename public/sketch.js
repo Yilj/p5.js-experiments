@@ -13,5 +13,5 @@ function sendData(data) {
 }
 
 function dataFromServer(data) {
-    console.log(data));
+    console.log(data);
 }
