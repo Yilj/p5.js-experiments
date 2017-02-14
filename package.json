@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Yilj/p5.js-experiments/issues"
   },
-  "homepage": "https://github.com/Yilj/p5.js-experiments#readme"
+  "homepage": "https://github.com/Yilj/p5.js-experiments#readme",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
 }
