@@ -15,16 +15,10 @@ var socket = require('socket.io');
 //creating socket io with the express server
 var io = new socket(server);
 //setting up function called when a new client connects
-io.sockets.on('connection', newSocketConnection);
-
-
-function newSocketConnection(socket) {
-    //console.log('new socket connection: "' + socket.id + '"');
+io.sockets.on('connection', function(socket) {
     //setting up function called when a message is received from client
-    io.sockets.on('dataToServer', dataFromClient);
-
-    function dataFromClient(data) {
+    socket.on('dataToServer', function(data) {
         socket.broadcast.emit('dataToClient', data);
         console.log(data);
-    }
-}
+    });
+});
