@@ -16,14 +16,15 @@ var socket = require('socket.io');
 var io = new socket(server);
 //setting up function called when a new client connects
 io.sockets.on('connection', newSocketConnection);
-//setting up function called when a message is received from client
-io.sockets.on('dataToServer', dataFromClient);
+
 
 function newSocketConnection(socket) {
-    console.log('new socket connection: "' + socket.id + '"');
-}
+    //console.log('new socket connection: "' + socket.id + '"');
+    //setting up function called when a message is received from client
+    io.sockets.on('dataToServer', dataFromClient);
 
-function dataFromClient(data) {
-    socket.broadcast.emit('dataToClient', data);
-    console.log(data);
+    function dataFromClient(data) {
+        socket.broadcast.emit('dataToClient', data);
+        console.log(data);
+    }
 }
